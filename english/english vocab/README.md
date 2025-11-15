@@ -136,14 +136,12 @@ Import.
 
 🎨 5. Card Templates
 Front Template
-html
-Copy code
 
-<div style="font-family: 'Segoe UI', Roboto, sans-serif; font-size: 18px; line-height: 1.5; color: #222; max-width: 600px; margin: auto; text-align: center;">
-
-  <div style="font-size: 32px; font-weight: 700; color: #1a1a1a;">
-    {{Word}}
-  </div>
+```html
+<div
+  style="font-family: 'Segoe UI', Roboto, sans-serif; font-size: 18px; line-height: 1.5; color: #222; max-width: 600px; margin: auto; text-align: center;"
+>
+  <div style="font-size: 32px; font-weight: 700; color: #1a1a1a;">{{Word}}</div>
 
   <div style="font-size: 16px; color: #666; margin-top: 5px;">
     {{Part of speech}}
@@ -153,23 +151,32 @@ Copy code
     <i>{{Phon UK}}</i> / <i>{{Phon US}}</i>
   </div>
 
-  <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0 15px 0; width: 70%;">
+  <hr
+    style="border: none; border-top: 1px solid #ddd; margin: 20px 0 15px 0; width: 70%;"
+  />
 
   <div style="font-size: 17px; color: #333;">
-    <b style="color:#0073e6;">What does it mean?</b><br>
-    <span style="font-size:15px; color:#666;">Think of core, literal, and figurative sense before flipping.</span>
+    <b style="color:#0073e6;">What does it mean?</b><br />
+    <span style="font-size:15px; color:#666;"
+      >Think of core, literal, and figurative sense before flipping.</span
+    >
   </div>
 
   <div style="margin-top: 25px; color: #999; font-size: 14px;">
     💡 Recall collocations or a short example sentence in your head.
   </div>
 </div>
-Back Template
-html
-Copy code
-<div style="font-family: 'Segoe UI', Roboto, sans-serif; font-size: 17px; line-height: 1.5; color: #222; max-width: 600px; margin: auto; text-align: left;">
+```
 
-  <div style="font-size: 28px; font-weight: 700; color: #1a1a1a; text-align: center;">
+Back Template
+
+```html
+<div
+  style="font-family: 'Segoe UI', Roboto, sans-serif; font-size: 17px; line-height: 1.5; color: #222; max-width: 600px; margin: auto; text-align: left;"
+>
+  <div
+    style="font-size: 28px; font-weight: 700; color: #1a1a1a; text-align: center;"
+  >
     {{Word}}
   </div>
 
@@ -177,15 +184,22 @@ Copy code
     {{Part of speech}} • <i>{{Phon UK}}</i> / <i>{{Phon US}}</i>
   </div>
 
-  <hr style="border: none; border-top: 1px solid #ddd; margin: 10px 0 15px 0;">
+  <hr
+    style="border: none; border-top: 1px solid #ddd; margin: 10px 0 15px 0;"
+  />
 
   <div><b style="color:#0073e6;">Core meaning:</b> {{Core meaning}}</div>
   <div><b style="color:#0073e6;">Literal meaning:</b> {{Literal meaning}}</div>
-  <div><b style="color:#0073e6;">Figurative meaning:</b> {{Figurative meaning}}</div>
+  <div>
+    <b style="color:#0073e6;">Figurative meaning:</b> {{Figurative meaning}}
+  </div>
 
-  <div style="margin-top: 12px;"><b style="color:#009966;">Collocations:</b> {{Collocations}}</div>
+  <div style="margin-top: 12px;">
+    <b style="color:#009966;">Collocations:</b> {{Collocations}}
+  </div>
 
-  <div style="margin-top: 12px;"><b style="color:#cc5500;">Examples:</b>
+  <div style="margin-top: 12px;">
+    <b style="color:#cc5500;">Examples:</b>
     <ul style="margin:5px 0 0 15px;">
       <li><b>Simple:</b> {{Example simple}}</li>
       <li><b>Intermediate:</b> {{Example intermediate}}</li>
@@ -193,13 +207,18 @@ Copy code
     </ul>
   </div>
 
-  <div style="margin-top: 12px;"><b style="color:#9933cc;">Synonyms:</b> {{Synonyms}}</div>
+  <div style="margin-top: 12px;">
+    <b style="color:#9933cc;">Synonyms:</b> {{Synonyms}}
+  </div>
   <div><b style="color:#9933cc;">Antonyms:</b> {{Antonyms}}</div>
 
-  <div style="margin-top: 12px;"><b style="color:#cc0000;">Mnemonic:</b> <i>{{Mnemonic}}</i></div>
+  <div style="margin-top: 12px;">
+    <b style="color:#cc0000;">Mnemonic:</b> <i>{{Mnemonic}}</i>
+  </div>
 
-  <hr style="border: none; border-top: 1px solid #ddd; margin: 15px 0;">
+  <hr style="border: none; border-top: 1px solid #ddd; margin: 15px 0;" />
   <div style="text-align: right; font-size: 13px; color: #777;">
     CEFR: {{CEFR level}}
   </div>
 </div>
+```
